@@ -1,34 +1,118 @@
-img, p, h1, h2, .divider {
-	width: 100%;
-	max-width: 800px;
-	margin-left: auto;
-	margin-right: auto;
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background: white;
 }
 
+body {
+    font-family: "Roboto", sans-serif;
+    color: #111;
+    overscroll-behavior-y: none;
+}
+
+/* fixed hero */
+.hero {
+    height: 39vw;
+    background-image: url("images/sabalenka.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-attachment: fixed;
+}
+
+/* article sheet */
+.article-wrapper {
+    position: relative;
+    background: white;
+    padding-top: 16px;
+    padding-bottom: 120px;
+}
+
+/* centered header */
+.header-block {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto 32px auto;
+}
+
+/* centered content */
+p,
+h1,
+h2,
+.hero-caption,
+.article-break,
 img {
-	display: block;
-	padding: 15px 0px;
+    width: 100%;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
 }
 
+/* caption */
+.hero-caption {
+    font-size: 14px;
+    line-height: 1.3;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.credit {
+    color: #999;
+    margin-left: 6px;
+}
+
+/* divider */
+.article-break {
+    border-top: 1px solid #ddd;
+}
+
+.top-break {
+    margin-bottom: 25px;
+}
+
+.byline-break {
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+/* title */
+h1 {
+    font-size: 44px;
+    line-height: 1.05;
+    font-weight: 700;
+    margin: 0 0 20px 0;
+}
+
+/* subtitle */
+h2 {
+    font-size: 24px;
+    line-height: 1.35;
+    font-weight: 400;
+    color: #555;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+/* byline */
+.byline {
+    font-size: 16px;
+    line-height: 1.45;
+    color: #444;
+    margin: 0;
+}
+
+/* article paragraphs */
 p {
-	font-size: 18px;
-	line-height: 1.4;
-	font-family: "Crimson Text";
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
 }
 
-h1, h2 { 
-font-family: "Roboto";
+/* article images */
+img {
+    display: block;
+    height: auto;
+    padding: 10px 0;
 }
-
-.divider {
-height: 2px;
-background-color: #0868ac;
-margin-top: 10px;
-margin-bottom: 10px;
-}
-
-.grad-img {
-  width: 300px;   /* or whatever size you want */
-  height: auto;
-}
-
